@@ -6,8 +6,8 @@ import Guide from '../components/Guide';
 export default function Home() {
   return (
     <>
-<header><div className="tb"><div className="w"><span>📍 Near Shiv Chowk, Raiwala, Dehradun, Uttarakhand</span><a href="tel:+919897116681">📞 Call us: 098971 16681</a></div></div><div className="w nav"><a className="logo" href="#top"><i>⚡</i><span>Atul Electricals<small>& Electronics</small></span></a>
-<nav><a href="#products">Products</a><a href="#shop-by">Shop by need</a><a href="#guide">Buying guide</a><a href="#about">About</a><a href="#faq">FAQ</a><a className="btn" href="tel:+919897116681">Call now</a></nav></div></header>
+<header><div className="tb"><div className="w"><span>📍 Near Shiv Chowk, Raiwala, Dehradun, Uttarakhand</span><a href="tel:+918279344070">📞 Call us: 8279344070</a></div></div><div className="w nav"><a className="logo" href="#top"><i>⚡</i><span>Atul Electricals<small>& Electronics</small></span></a>
+<nav><a href="#products">Products</a><a href="#shop-by">Shop by need</a><a href="#guide">Buying guide</a><a href="#about">About</a><a href="#faq">FAQ</a><a className="btn" href="tel:+918279344070">Call now</a></nav></div></header>
 <main id="top">
 <section className="hero"><div className="bg" aria-hidden="true"><span className="orb o1"></span><span className="orb o2"></span><svg className="ckt" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice"><g fill="none" strokeWidth="2" strokeLinecap="round"><path className="p" d="M0 130H220L260 170H520L560 130H900L940 90H1200"/><path className="p d2" d="M0 570H180L230 520H480L520 560H820L870 610H1200"/><path className="p d3" d="M300 700V570M700 0V130M1000 700V610"/><path className="p d4" d="M0 350H120L160 310H380M760 350H1040L1080 390H1200"/></g><g fill="#0b8fd9"><circle cx="220" cy="130" r="4"/><circle cx="520" cy="170" r="4"/><circle cx="900" cy="130" r="4"/><circle cx="480" cy="520" r="4"/><circle cx="820" cy="560" r="4"/><circle cx="160" cy="310" r="4"/><circle cx="1040" cy="350" r="4"/></g></svg><span className="bi b1"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg></span><span className="bi b2"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg></span><span className="bi b3"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg></span><span className="bi b4"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg></span></div><div className="w"><div>
 <span className="pill">📍 Raiwala, Dehradun • Uttarakhand</span>
@@ -76,13 +76,13 @@ export default function Home() {
 <p className="vs">Come see our full range in person. Our team is always happy to help you pick the right product for your home or project.</p>
 <div className="vr"><i><svg className="ic" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></i><div><b>Address</b><span>Near Shiv Chowk, Raiwala, Dehradun, Uttarakhand 249205</span></div></div>
 <div className="vr"><i><svg className="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><div><b>Store Hours</b><span>Open daily, closes 9:30 PM</span></div></div>
-<div className="vr"><i><svg className="ic" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></i><div><b>Call / WhatsApp</b><span><a href="tel:+919897116681">098971 16681</a></span></div></div>
-<div className="cta" style={{marginTop:'26px'}}><a className="btn" href="https://www.google.com/maps/search/?api=1&query=Atul+Electricals+Raiwala+Rishikesh">📍 Open in Google Maps</a><a className="btn alt" href="https://wa.me/919897116681">WhatsApp</a></div></div>
+<div className="vr"><i><svg className="ic" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></i><div><b>Call / WhatsApp</b><span><a href="tel:+918279344070">8279344070</a></span></div></div>
+<div className="cta" style={{marginTop:'26px'}}><a className="btn" href="https://www.google.com/maps/search/?api=1&query=Atul+Electricals+Raiwala+Rishikesh">📍 Open in Google Maps</a><a className="btn alt" href="https://wa.me/918279344070">WhatsApp</a></div></div>
 <div className="vm"><iframe title="Atul Electricals location" src="https://www.google.com/maps?q=Atul+Electricals+Raiwala+Rishikesh&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen /></div>
 </div></div></section>
 </main>
 <footer><div className="w"><span>© 2026 Atul Electricals & Electronics, Raiwala</span><span>Authorised dealer of Indo Asian products</span></div></footer>
-<a className="btn fab" href="tel:+919897116681">📞 Call</a>
+<a className="btn fab" href="tel:+918279344070">📞 Call</a>
     </>
   );
 }
