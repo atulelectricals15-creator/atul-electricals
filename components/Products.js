@@ -1,6 +1,8 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { BRANDS } from '../lib/data';
 import Icon from './Icon';
 import { C } from '../lib/data';
 
@@ -21,7 +23,7 @@ export default function Products() {
       </div>
       <div className="grid">
         {list.map((c) => (
-          <article className="cat" key={c[0]}>
+          <Link href={`/products/${c[0]}`} className="cat cat-link" key={c[0]}>
             {PHOTOS.includes(c[0]) ? (
               <div className="im">
                 <em>{c[1]}</em>
@@ -34,8 +36,10 @@ export default function Products() {
               <h3>{c[2]}</h3>
               <p>{c[3]}</p>
               <ul>{c[4].map((x) => <li key={x}>{x}</li>)}</ul>
+              <div className="brand-tags"><strong>Brands:</strong> {(BRANDS[c[0]] || []).map((brand) => <span key={brand}>{brand}</span>)}</div>
+              <span className="cat-more">View product details <b aria-hidden="true">↗</b></span>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
     </>
