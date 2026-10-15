@@ -53,8 +53,8 @@ export default async function ProductDetailPage({ params }) {
               <p className="availability-note">Models and stock can change. Please call us to confirm current availability, variants and prices.</p>
             </div>
             <div className="detail-actions">
-              <a className="btn" href="tel:+919897116681">Call 098971 16681</a>
-              <a className="btn alt" href={`https://wa.me/919897116681?text=${encodeURIComponent(`Hello Atul Electricals, I want to enquire about ${item[2]} and brands: ${brands.join(', ')}.`)}`}>Ask on WhatsApp</a>
+              <a className="btn" href="tel:+918279344070">Call 8279344070</a>
+              <a className="btn alt" href={`https://wa.me/918279344070?text=${encodeURIComponent(`Hello Atul Electricals, I want to enquire about ${item[2]} and brands: ${brands.join(', ')}.`)}`}>Ask on WhatsApp</a>
             </div>
           </div>
         </div>
