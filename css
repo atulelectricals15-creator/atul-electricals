@@ -1,0 +1,35 @@
+:root {
+  --orient: #EB5A29;
+  --indo-asian: #C21225;
+  --anchor-penta: #0E4C9E;
+}
+
+.brand-orient       { --brand-color: var(--orient); }
+.brand-indo-asian   { --brand-color: var(--indo-asian); }
+.brand-anchor-penta { --brand-color: var(--anchor-penta); }
+
+.brand-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border-bottom: 4px solid var(--brand-color);
+}
+
+.brand-hero img {
+  height: 56px;          /* Anchor ke liye 48px kaafi hai */
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-hero h1 { color: var(--brand-color); margin: 0; }
+
+.brand-btn {
+  background: var(--brand-color);
+  color: #fff;
+  border: 0;
+  padding: .6rem 1.2rem;
+  border-radius: 6px;
+}
+.brand-btn:hover { filter: brightness(.9); }
