@@ -216,3 +216,20 @@ nav a{opacity:1;color:#334651}nav a.btn{color:#10222e}
 .brand-back-link{color:inherit;font-weight:700;text-decoration:underline;text-underline-offset:4px}
 @media(max-width:900px){.brand-hero-grid{grid-template-columns:1fr;gap:28px}.brand-hero-image img{height:320px}.module-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.brand-range-inner{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.brand-page{padding-top:88px}.brand-hero{padding:30px 0 40px}.brand-hero-image img{height:260px}.brand-module-section{padding:44px 0}.module-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.module-card{padding:14px;min-height:158px}.module-number{font-size:30px}.brand-range-band{padding:32px 0}.brand-bottom{padding:42px 0 54px}}
+
+/* Brand page module and switch/socket catalogue cards */
+.module-photo{width:100%;height:116px;object-fit:cover;border-radius:12px;margin-bottom:12px;background:var(--soft)}
+.module-card{min-height:250px}
+.brand-products-section{padding:64px 0;background:var(--soft)}
+.brand-products-section h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.02em}
+.brand-products-section .brand-section-copy{color:var(--mute);max-width:70ch;margin:12px 0 28px}
+.brand-product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.brand-product-card{display:flex;flex-direction:column;gap:8px;padding:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;text-decoration:none;min-width:0;transition:transform .2s,box-shadow .2s}
+.brand-product-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(10,31,44,.1)}
+.brand-product-card img{width:100%;height:140px;object-fit:cover;border-radius:12px;background:var(--soft)}
+.brand-product-name{font-size:16px;font-weight:800;line-height:1.25}
+.brand-product-note{font-size:13px;color:var(--mute);line-height:1.45}
+.brand-product-card .module-ask{margin-top:auto}
+.brand-bottom-whatsapp{border:1px solid #087bb5;color:#087bb5!important;background:transparent}
+@media(max-width:900px){.brand-product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.module-card{min-height:230px}}
+@media(max-width:560px){.brand-products-section{padding:44px 0}.brand-product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.brand-product-card{padding:10px}.brand-product-card img{height:108px}.module-photo{height:96px}.module-card{min-height:220px}}
