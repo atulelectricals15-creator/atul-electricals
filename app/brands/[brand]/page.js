@@ -8,7 +8,7 @@ const BRANDS = {
   'indo-asian': { name: 'Indo Asian', slug: 'indo-asian' }
 };
 
-const MODULES = [2, 3, 4, 6, 8, 17, 18];
+const MODULES = [2, 3, 4, 6, 8, 12, 18];
 const PRODUCTS = [
   { name: '6A Switch', note: 'Everyday light and small-load switching' },
   { name: '16A Switch', note: 'For compatible higher-rated circuits' },
