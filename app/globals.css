@@ -139,7 +139,7 @@ nav a{opacity:1;color:#334651}nav a.btn{color:#10222e}
 .mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .mt{display:flex;width:max-content;animation:mq 32s linear infinite}.mq:hover .mt{animation-play-state:paused}
 .mg{display:flex;gap:46px;padding-right:46px;flex:none}.mg span{white-space:nowrap}
-@keyframes mq{to{transform:translateX(-50%)}}
+@keyframes mq{to{transform:translateX(-33.333333%)}}
 @media(max-width:560px){.mg{gap:30px;padding-right:30px}.mt{animation-duration:26s}}
 @media(prefers-reduced-motion:reduce){.mt{animation:none;width:auto;flex-wrap:wrap;justify-content:center}.mg[aria-hidden]{display:none}}
 .vm iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
