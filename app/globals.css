@@ -174,3 +174,45 @@ nav a{opacity:1;color:#334651}nav a.btn{color:#10222e}
 .product-detail .availability-note{font-size:14px;color:var(--mute);margin-top:12px}
 @media(max-width:900px){.product-detail .detail-layout{grid-template-columns:1fr}.product-detail{padding-top:125px}}
 @media(max-width:560px){.product-detail .brand-panel,.product-detail .check-panel{padding:18px}.product-detail .detail-actions .btn{width:100%;text-align:center}}
+
+
+/* Individual modular switch brand pages */
+.cat-title-link{color:inherit;text-decoration:none}
+.cat-title-link:hover{color:#087bb5}
+.brand-chip-link{display:inline-block;background:#e3f3fc;color:#075985;border-radius:999px;padding:3px 9px;font-weight:700;text-decoration:none;transition:background .2s,transform .2s}
+.brand-chip-link:hover{background:#c8eafa;transform:translateY(-1px)}
+.brand-page{padding-top:96px;background:var(--bg)}
+.brand-hero{background:radial-gradient(600px 300px at 90% 10%,rgba(244,180,0,.18),transparent 65%),linear-gradient(135deg,#071a3d 0%,#0a3a8c 58%,#0f76d6 100%);color:#fff;padding:42px 0 58px}
+.brand-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.brand-breadcrumb{font-size:13px;color:#c7d9ef;margin-bottom:24px}
+.brand-breadcrumb a{color:#fff;text-decoration:none}
+.brand-eyebrow{display:inline-block;color:var(--cop);font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+.brand-hero .brand-eyebrow{color:#ffd45a}
+.brand-hero h1{font-size:clamp(34px,4.8vw,58px);letter-spacing:-.03em}
+.brand-hero h1 em{font-style:normal;color:#ffd04b}
+.brand-hero p{max-width:58ch;color:#d7e7f8;font-size:17px;margin:18px 0 26px}
+.brand-hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.brand-whatsapp{border:1px solid rgba(255,255,255,.65);color:#fff!important;background:transparent}
+.brand-hero-image{position:relative;overflow:hidden;border-radius:28px;background:#fff;box-shadow:0 22px 60px rgba(0,0,0,.24)}
+.brand-hero-image img{width:100%;height:390px;object-fit:cover}
+.brand-hero-image span{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);color:#10222e;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700}
+.brand-module-section{padding:68px 0}
+.brand-module-section h2,.brand-bottom h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.02em}
+.brand-section-copy{color:var(--mute);max-width:68ch;margin:12px 0 28px}
+.module-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.module-card{display:flex;flex-direction:column;align-items:flex-start;min-height:172px;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:20px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s}
+.module-card:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(10,31,44,.1);border-color:#8ecfe9}
+.module-number{font:800 34px/1 var(--f-d);color:#087bb5}
+.module-label{font-weight:800;font-size:16px;margin-top:8px}
+.module-hint{font-size:13px;color:var(--mute)}
+.module-ask{margin-top:auto;padding-top:12px;color:#087bb5;font-size:13px;font-weight:800}
+.brand-range-band{background:var(--deep);color:#fff;padding:42px 0}
+.brand-range-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand-range-inner h2{font-size:clamp(25px,3vw,34px)}
+.brand-range-inner p{max-width:70ch;color:#c6d4db;margin:12px 0 0}
+.brand-range-inner .btn{flex-shrink:0}
+.brand-bottom{padding:58px 0 72px}
+.brand-bottom p{color:var(--mute);max-width:68ch;margin:12px 0 22px}
+.brand-back-link{color:inherit;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:900px){.brand-hero-grid{grid-template-columns:1fr;gap:28px}.brand-hero-image img{height:320px}.module-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.brand-range-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.brand-page{padding-top:88px}.brand-hero{padding:30px 0 40px}.brand-hero-image img{height:260px}.brand-module-section{padding:44px 0}.module-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.module-card{padding:14px;min-height:158px}.module-number{font-size:30px}.brand-range-band{padding:32px 0}.brand-bottom{padding:42px 0 54px}}
