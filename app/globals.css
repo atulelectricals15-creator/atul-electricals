@@ -233,3 +233,20 @@ nav a{opacity:1;color:#334651}nav a.btn{color:#10222e}
 .brand-bottom-whatsapp{border:1px solid #087bb5;color:#087bb5!important;background:transparent}
 @media(max-width:900px){.brand-product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.module-card{min-height:230px}}
 @media(max-width:560px){.brand-products-section{padding:44px 0}.brand-product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.brand-product-card{padding:10px}.brand-product-card img{height:108px}.module-photo{height:96px}.module-card{min-height:220px}}
+
+/* Brand-specific color themes */
+.brand-theme-orient{--brand-accent:#f28c00;--brand-accent-dark:#b85c00}
+.brand-theme-orient .brand-hero{background:radial-gradient(600px 300px at 90% 10%,rgba(255,173,51,.3),transparent 65%),linear-gradient(135deg,#4b2500 0%,#b85c00 52%,#f28c00 100%)}
+.brand-theme-orient .brand-hero h1 em,.brand-theme-orient .brand-eyebrow{color:#ffe0a3}
+.brand-theme-orient .module-number,.brand-theme-orient .module-ask{color:#c96a00}
+.brand-theme-orient .module-card:hover{border-color:#f5b45d}
+.brand-theme-orient .brand-chip-link{background:#fff0d9;color:#8a4300}
+.brand-theme-indo{--brand-accent:#d71920;--brand-accent-dark:#99121a}
+.brand-theme-indo .brand-hero{background:radial-gradient(600px 300px at 90% 10%,rgba(255,91,91,.24),transparent 65%),linear-gradient(135deg,#4a0710 0%,#a90f1b 55%,#e0202b 100%)}
+.brand-theme-indo .brand-hero h1 em,.brand-theme-indo .brand-eyebrow{color:#ffd0d0}
+.brand-theme-indo .module-number,.brand-theme-indo .module-ask{color:#c71922}
+.brand-theme-indo .module-card:hover{border-color:#ef8b90}
+.brand-theme-indo .brand-chip-link{background:#ffe7e8;color:#a20f18}
+.brand-theme-anchor{--brand-accent:#087bb5;--brand-accent-dark:#075985}
+.cat-link{display:block;cursor:pointer}
+.cat-link .bd{height:100%}
