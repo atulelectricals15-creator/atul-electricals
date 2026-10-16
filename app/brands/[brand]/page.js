@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 const BRANDS = {
-  orient: { name: 'Orient', slug: 'orient' },
-  'anchor-penta': { name: 'Anchor Penta', slug: 'anchor-penta' },
-  'indo-asian': { name: 'Indo Asian', slug: 'indo-asian' }
+  orient: { name: 'Orient Stella Series', slug: 'orient', theme: 'orient' },
+  'anchor-penta': { name: 'Anchor Penta', slug: 'anchor-penta', theme: 'anchor' },
+  'indo-asian': { name: 'Indo Asian', slug: 'indo-asian', theme: 'indo' }
 };
 
 const MODULES = [2, 3, 4, 6, 8, 12, 18];
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
   if (!item) return { title: 'Brand not found | Atul Electricals' };
   return {
     title: `${item.name} Modular Switches & Sockets | Atul Electricals`,
-    description: `Explore ${item.name} modular plates from 2M, 3M, 4M, 6M, 8M, 17M and 18M, switches, sockets, regulators, bell pushes, blank plates and modular MCB options at Atul Electricals, Raiwala.`
+    description: `Explore ${item.name} modular plates from 2M, 3M, 4M, 6M, 8M, 12M and 18M, switches, sockets, regulators, bell pushes, blank plates and modular MCB options at Atul Electricals, Raiwala.`
   };
 }
 
@@ -45,7 +45,7 @@ export default async function BrandPage({ params }) {
   if (!item) notFound();
 
   return (
-    <main className="brand-page">
+    <main className={`brand-page brand-theme-${item.theme}`}>
       <section className="brand-hero">
         <div className="w brand-hero-grid">
           <div>
@@ -69,7 +69,7 @@ export default async function BrandPage({ params }) {
         <div className="w">
           <span className="brand-eyebrow">Browse by plate size</span>
           <h2>Modular Sheet Categories</h2>
-          <p className="brand-section-copy">Sizes requested: 2M, 3M, 4M, 6M, 8M, 17M and 18M. Each card includes a switchboard photo for visual reference. Actual design and availability may vary by brand and model.</p>
+          <p className="brand-section-copy">Sizes requested: 2M, 3M, 4M, 6M, 8M, 17M and 12M and 18M. Each card includes a switchboard photo for visual reference. Actual design and availability may vary by brand and model.</p>
           <div className="module-grid">
             {MODULES.map((size) => (
               <a className="module-card" key={size} href={`https://wa.me/918279344070?text=${encodeURIComponent(`Hello Atul Electricals, please share availability and price for ${item.name} ${size}M modular sheet with switches and sockets.`)}`}>
