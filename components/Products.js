@@ -23,7 +23,7 @@ export default function Products() {
       </div>
       <div className="grid">
         {list.map((c) => (
-          <div className="cat" key={c[0]}>
+          <Link href={`/products/${c[0]}`} className="cat cat-link" key={c[0]}>
             {PHOTOS.includes(c[0]) ? (
               <div className="im">
                 <em>{c[1]}</em>
@@ -33,16 +33,16 @@ export default function Products() {
               <div className="im ico"><em>{c[1]}</em><Icon name={c[0]} /></div>
             )}
             <div className="bd">
-              <h3><Link className="cat-title-link" href={`/products/${c[0]}`}>{c[2]}</Link></h3>
+              <h3>{c[2]}</h3>
               <p>{c[3]}</p>
               <ul>{c[4].map((x) => <li key={x}>{x}</li>)}</ul>
               <div className="brand-tags"><strong>Brands:</strong> {(BRANDS[c[0]] || []).map((brand) => {
                 const brandSlug = c[0] === 'sw' ? ({ 'Orient': 'orient', 'Anchor Penta': 'anchor-penta', 'Indo Asian': 'indo-asian' }[brand]) : null;
                 return brandSlug ? <Link className="brand-chip-link" href={`/brands/${brandSlug}`} key={brand}>{brand}</Link> : <span key={brand}>{brand}</span>;
               })}</div>
-              <Link className="cat-more" href={`/products/${c[0]}`}>View product details <b aria-hidden="true">↗</b></Link>
+              <span className="cat-more">View product details <b aria-hidden="true">↗</b></span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </>
