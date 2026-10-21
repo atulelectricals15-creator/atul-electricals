@@ -40,7 +40,7 @@ export default function Products() {
               <ul>{c[4].map((x) => <li key={x}>{x}</li>)}</ul>
               <div className="brand-tags"><strong>Brands:</strong> {(BRANDS[c[0]] || []).map((brand) => {
                 const brandSlug = ({ 'Orient — Stella Series': 'orient', 'Orient': 'orient', 'Anchor Penta': 'anchor-penta', 'Indo Asian': 'indo-asian' }[brand]) || brand.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-                const brandClass = ({ 'Orient — Stella Series': 'brand-orient', 'Orient': 'brand-orient', 'Anchor Penta': 'brand-anchor-penta', 'Indo Asian': 'brand-indo-asian' }[brand]) || '';
+                const brandClass = ({ 'Orient — Stella Series': 'brand-orient', 'Orient': 'brand-orient', 'Anchor Penta': 'brand-anchor-penta', 'Indo Asian': 'brand-indo-asian', 'Havells': 'brand-havells' }[brand]) || '';
                 return <Link className={`brand-chip-link ${brandClass}`} href={`/brands/${brandSlug}`} key={brand} onClick={(event) => event.stopPropagation()}>{brand}</Link>;
               })}</div>
               <span className="cat-more">View product details <b aria-hidden="true">↗</b></span>
