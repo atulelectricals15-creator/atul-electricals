@@ -81,7 +81,7 @@ export default function Home() {
 <div className="vm"><iframe title="Atul Electricals location" src="https://www.google.com/maps?q=Atul+Electricals+Raiwala+Rishikesh&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen /></div>
 </div></div></section>
 </main>
-<footer><div className="w"><span>© 2026 Atul Electricals & Electronics, Raiwala</span><span>Authorised dealer of Indo Asian products</span></div></footer>
+<footer><div className="w"><span>© 2026 Atul Electricals & Electronics, Raiwala</span><span>Authorised dealer of Indo Asian products</span><span className="footer-links"><a href="/terms">Terms &amp; Conditions</a> · <a href="/brands">Brands</a></span></div></footer>
 <a className="btn fab" href="tel:+918279344070">📞 Call</a>
     </>
   );
