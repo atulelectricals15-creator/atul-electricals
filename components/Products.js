@@ -37,7 +37,7 @@ export default function Products() {
               <p>{c[3]}</p>
               <ul>{c[4].map((x) => <li key={x}>{x}</li>)}</ul>
               <div className="brand-tags"><strong>Brands:</strong> {(BRANDS[c[0]] || []).map((brand) => {
-                const brandSlug = ({ 'Orient — Stella Series': 'orient', 'Orient': 'orient', 'Anchor Penta': 'anchor-penta', 'Indo Asian': 'indo-asian', 'Havells': 'havells', 'KEI': 'kei', 'Kunthcab': 'kunthcab' }[brand]) || null;
+                const brandSlug = ({ 'Orient — Stella Series': 'orient', 'Orient': 'orient', 'Anchor Penta': 'anchor-penta', 'Indo Asian': 'indo-asian' }[brand]) || brand.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
                 const brandClass = ({ 'Orient — Stella Series': 'brand-orient', 'Orient': 'brand-orient', 'Anchor Penta': 'brand-anchor-penta', 'Indo Asian': 'brand-indo-asian' }[brand]) || '';
                 return brandSlug ? <Link className={`brand-chip-link ${brandClass}`} href={`/brands/${brandSlug}`} key={brand}>{brand}</Link> : <span className={brandClass} key={brand}>{brand}</span>;
               })}</div>
