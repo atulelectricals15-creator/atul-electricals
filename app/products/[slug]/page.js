@@ -49,7 +49,7 @@ export default async function ProductDetailPage({ params }) {
               <h2>Brands available in this category</h2>
               <div className="brand-list">
                 {brands.map((brand) => {
-                  const brandSlug = ({ 'Orient — Stella Series': 'orient', 'Orient': 'orient', 'Anchor Penta': 'anchor-penta', 'Indo Asian': 'indo-asian', 'Havells': 'havells', 'KEI': 'kei', 'Kunthcab': 'kunthcab' }[brand]);
+                  const brandSlug = ({ 'Orient — Stella Series': 'orient', 'Orient': 'orient', 'Anchor Penta': 'anchor-penta', 'Indo Asian': 'indo-asian' }[brand]) || brand.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
                   const themedBrand = ({ 'Orient — Stella Series': 'brand-orient', 'Orient': 'brand-orient', 'Anchor Penta': 'brand-anchor-penta', 'Indo Asian': 'brand-indo-asian' }[brand] || '');
                   return brandSlug ? <Link className={themedBrand} href={`/brands/${brandSlug}`} key={brand}>{brand}</Link> : <span className={themedBrand} key={brand}>{brand}</span>;
                 })}
