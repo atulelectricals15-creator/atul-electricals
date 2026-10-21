@@ -284,3 +284,5 @@ nav a{opacity:1;color:#334651}nav a.btn{color:#10222e}
 .brand-list a{display:inline-block;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 12px;margin:0 6px 6px 0;color:inherit;background:var(--card)}
 .brand-list a:hover,.brand-chip-link:hover{filter:brightness(.94);text-decoration:underline}
 @media(max-width:700px){.wire-size-grid,.brand-index-grid{grid-template-columns:1fr}.legal-page,.brand-page{padding-top:100px}.legal-heading,.brand-hero{padding:24px}}
+
+.cat-link{cursor:pointer}.cat-link:focus-visible{outline:3px solid var(--volt);outline-offset:3px}.footer-links a{color:inherit;text-decoration:underline;text-underline-offset:3px}
