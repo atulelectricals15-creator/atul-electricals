@@ -48,7 +48,10 @@ export default async function ProductDetailPage({ params }) {
             <div className="brand-panel">
               <h2>Brands available in this category</h2>
               <div className="brand-list">
-                {brands.map((brand) => <span key={brand}>{brand}</span>)}
+                {brands.map((brand) => {
+                  const themedBrand = slug === 'sw' ? ({ 'Orient — Stella Series': 'brand-orient', 'Anchor Penta': 'brand-anchor-penta', 'Indo Asian': 'brand-indo-asian' }[brand] || '') : '';
+                  return <span className={themedBrand} key={brand}>{brand}</span>;
+                })}
               </div>
               <p className="availability-note">Models and stock can change. Please call us to confirm current availability, variants and prices.</p>
             </div>
