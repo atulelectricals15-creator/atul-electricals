@@ -286,3 +286,11 @@ nav a{opacity:1;color:#334651}nav a.btn{color:#10222e}
 @media(max-width:700px){.wire-size-grid,.brand-index-grid{grid-template-columns:1fr}.legal-page,.brand-page{padding-top:100px}.legal-heading,.brand-hero{padding:24px}}
 
 .cat-link{cursor:pointer}.cat-link:focus-visible{outline:3px solid var(--volt);outline-offset:3px}.footer-links a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+
+/* Wire size photos and Havells brand colour theme */
+.wire-size-photo{width:100%;height:150px;object-fit:contain;display:block;background:#fff;border-radius:12px;margin-bottom:16px;padding:8px}
+.brand-page.brand-havells .brand-hero{background:linear-gradient(135deg,#780d13 0%,#ED1C24 58%,#ff555b 100%)}
+.brand-page.brand-havells .brand-hero h1,.brand-page.brand-havells .brand-hero .eyebrow{color:#fff}
+.brand-chip-link.brand-havells,.brand-list .brand-havells{background:#ED1C24!important;border-color:#ED1C24!important;color:#fff!important}
+.brand-page.brand-havells .wire-size-card{border-top:3px solid #ED1C24}
+@media(max-width:560px){.wire-size-photo{height:125px}}
