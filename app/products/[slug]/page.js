@@ -49,8 +49,9 @@ export default async function ProductDetailPage({ params }) {
               <h2>Brands available in this category</h2>
               <div className="brand-list">
                 {brands.map((brand) => {
-                  const themedBrand = slug === 'sw' ? ({ 'Orient — Stella Series': 'brand-orient', 'Anchor Penta': 'brand-anchor-penta', 'Indo Asian': 'brand-indo-asian' }[brand] || '') : '';
-                  return <span className={themedBrand} key={brand}>{brand}</span>;
+                  const brandSlug = ({ 'Orient — Stella Series': 'orient', 'Orient': 'orient', 'Anchor Penta': 'anchor-penta', 'Indo Asian': 'indo-asian', 'Havells': 'havells', 'KEI': 'kei', 'Kunthcab': 'kunthcab' }[brand]);
+                  const themedBrand = ({ 'Orient — Stella Series': 'brand-orient', 'Orient': 'brand-orient', 'Anchor Penta': 'brand-anchor-penta', 'Indo Asian': 'brand-indo-asian' }[brand] || '');
+                  return brandSlug ? <Link className={themedBrand} href={`/brands/${brandSlug}`} key={brand}>{brand}</Link> : <span className={themedBrand} key={brand}>{brand}</span>;
                 })}
               </div>
               <p className="availability-note">Models and stock can change. Please call us to confirm current availability, variants and prices.</p>
