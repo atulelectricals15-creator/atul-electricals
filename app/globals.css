@@ -250,3 +250,9 @@ nav a{opacity:1;color:#334651}nav a.btn{color:#10222e}
 .brand-theme-anchor{--brand-accent:#087bb5;--brand-accent-dark:#075985}
 .cat-link{display:block;cursor:pointer}
 .cat-link .bd{height:100%}
+
+
+/* Switches & Sockets brand themes */
+.brand-chip-link.brand-orient,.brand-list .brand-orient{background:#EB5A29!important;border-color:#EB5A29!important;color:#fff!important}
+.brand-chip-link.brand-indo-asian,.brand-list .brand-indo-asian{background:#C21225!important;border-color:#C21225!important;color:#fff!important}
+.brand-chip-link.brand-anchor-penta,.brand-list .brand-anchor-penta{background:#0E4C9E!important;border-color:#0E4C9E!important;color:#fff!important}
