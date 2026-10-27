@@ -294,3 +294,14 @@ nav a{opacity:1;color:#334651}nav a.btn{color:#10222e}
 .brand-chip-link.brand-havells,.brand-list .brand-havells{background:#ED1C24!important;border-color:#ED1C24!important;color:#fff!important}
 .brand-page.brand-havells .wire-size-card{border-top:3px solid #ED1C24}
 @media(max-width:560px){.wire-size-photo{height:125px}}
+
+
+/* Wire brand size cards */
+.wire-size-visual{height:150px;border-radius:12px;background:linear-gradient(135deg,#eef7fb,#d7eaf5);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;margin-bottom:16px;color:#0b4b72}
+.wire-size-visual span{font-size:38px;line-height:1;color:#0b8fd9;transform:rotate(-12deg)}
+.wire-size-visual strong{font-size:30px;line-height:1.2;font-weight:800}
+.wire-size-visual small{font-size:10px;letter-spacing:.2em;font-weight:800}
+.wire-brand-page .wire-size-card{text-decoration:none;display:flex;flex-direction:column}
+.wire-brand-page .wire-size-card:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(10,31,44,.1)}
+.brand-page.brand-havells .wire-size-visual{background:#fff0f0;color:#a30f16}
+.brand-page.brand-havells .wire-size-visual span{color:#ED1C24}
