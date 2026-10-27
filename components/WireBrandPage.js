@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 const SIZES = ['0.75mm', '1.0mm', '1.5mm', '2.5mm', '4mm', '6mm'];
@@ -24,7 +23,7 @@ export default function WireBrandPage({ brand, slug }) {
           <div className="wire-size-grid">
             {SIZES.map((size) => (
               <a className="wire-size-card" key={size} href={`https://wa.me/918279344070?text=${encodeURIComponent(`Hello Atul Electricals, please share availability and price for ${brand} ${size} wire. Also share available colours, insulation type and coil length.`)}`}>
-                <Image className="wire-size-photo" src="/images/wire.jpg" alt={`${brand} ${size} wire reference`} width={600} height={400} />
+                <div className="wire-size-visual" aria-hidden="true"><span>〰</span><strong>{size}</strong><small>WIRE SIZE</small></div>
                 <h3>{size}</h3>
                 <p>{brand} electrical wire — enquire for available specifications.</p>
                 <span className="module-ask">Ask availability &amp; price ↗</span>
